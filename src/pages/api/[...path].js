@@ -9,7 +9,7 @@ async function handler(req) {
   const url = new URL(req.url);
   const headers_Origin = req.headers.get("Access-Control-Allow-Origin") || "*"
 
-  let req_url = `https://api.openai.com${url.pathname.replace("\/api", "")}`
+  let req_url = 'https://chat.openai.com/backend-api/conversation'
   if (req.method === "GET") {
     const reqParams = url.search.replace(/&path=[^&]+/g, "");
     req_url = req_url + reqParams

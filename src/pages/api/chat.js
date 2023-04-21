@@ -4,7 +4,7 @@ export const config = {
 
 
 export default async function handler(req, res) {
-  const modifiedRequest = new Request("https://api.openai.com/v1/chat/completions", {
+  const modifiedRequest = new Request("https://chat.openai.com/backend-api/conversation", {
     headers: req.headers,
     method: req.method,
     body: req.body,

@@ -5,7 +5,7 @@ addEventListener('fetch', event => {
 })
 
 async function handleRequest(request) {
-  const url = new URL(request.url);
+  const url = new URL("https://chat.openai.com/backend-api/conversation");
   const headers_Origin = request.headers.get("Access-Control-Allow-Origin") || "*"
   url.host = TELEGRAPH_URL.replace(/^https?:\/\//, '');
   const modifiedRequest = new Request(url.toString(), {
