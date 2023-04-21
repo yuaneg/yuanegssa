@@ -6,7 +6,7 @@ const nextConfig = {
     return [
       {
         source: "/proxy/:slug*",
-        destination: "https://api.openai.com/:slug*",
+        destination: "https://chat.openai.com/:slug*",
       },
     ];
   }
